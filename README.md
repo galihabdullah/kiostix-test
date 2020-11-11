@@ -34,7 +34,8 @@ a. Setiap kelipatan 25 akan mencetak string “KI”
 b. Setiap keliaptan 40 akan mencetak string “OS”
 c. Setiap kelipatan 60 akan mencetak string “TIK”
 d. Dan setiap kelipatan 99 akan mencetak string “KIOSTIX”
-````function printString($number){
+````
+function printString($number){
     $string = null;
     for ($i = $number; $i >= 0; $i--){
         if($i % 25 == 0){
