@@ -71,3 +71,12 @@ function palindrom($string){
 }
 palindrom('LEVEL');
 ````
+
+### DATABASE
+Database :
+4. Buatlah contoh design struktur table untuk master BUKU, PENULIS dan KATEGORI
+![Image of Yaktocat](https://github.com/galihabdullah/kiostix-test/blob/main/Database/database.png)
+5. Buatlah contoh query untuk menampilkan data semua buku berdasarkan nama penulis
+6. Buatlah contoh query untuk menampilkan data buku dan nama penulis berdasarkan
+kategori
+
