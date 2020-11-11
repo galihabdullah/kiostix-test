@@ -114,6 +114,6 @@ git clone https://github.com/galihabdullah/kiostix-test.git
 4. Buat database
 5. Import sql "kiostix.sql"
 6. Update variable pada file .env
-7. Lalu jalankan "php -S localhost:8001"  atau bisa akses demo aplikasinya disni https://galih.firseadigital.com/docs
+7. Lalu jalankan "php -S localhost:8001"  atau bisa akses demo aplikasinya di https://galih.firseadigital.com/docs
 
 
