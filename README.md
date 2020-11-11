@@ -1,12 +1,26 @@
 # Kiostix Test
 
-Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
+### Logic
+Logic :
+1. Buatlah sebuah fungsi untuk menentukan nilai tertinggi & terendah dari baris array berikut,
+tanpa menggunakan fungsi bawaan seperti MAX / MIN.. [‘1,5,8,0,9,7,4,3,2’]
+```function getMax(array $number){
+    $current = 0;
+    foreach ($number as $num){
+        if($num > $current){
+            $current = $num;
+        }
+    }
+    echo $current . PHP_EOL;
+}
+```
 
-### This is a third-tier heading
-
-You can use one `#` all the way up to `######` six for different heading sizes.
-
-If you'd like to quote someone, use the > character before the line:
-
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-> - Captain Janeway
+2. Dari nilai 0-100, Buat lah fungsi dengan ketentuan berikut:
+a. Setiap kelipatan 25 akan mencetak string “KI”
+b. Setiap keliaptan 40 akan mencetak string “OS”
+c. Setiap kelipatan 60 akan mencetak string “TIK”
+d. Dan setiap kelipatan 99 akan mencetak string “KIOSTIX”
+3. Buatlah sebuah fungsi untuk mendeteksi sebuah kata Palindrom atau kata yang bila dibaca
+dari depan atau dari belakang, tetap sama, misal “LEVEL”,”KATAK”,”MALAM” dll.
+Diharapkan membuat fungsi sendiri tanpa menggunakan fungsi bawaan seperti String
+Reverse dsb.
