@@ -1,0 +1,2 @@
+SELECT buku.* FROM buku join penulis on buku.id_penilis = penulis.id where penulis.name like '%nama_penulis%';
+SELECT buku.*, penulis.* FROM buku join penulis on buku.id_penilis = penulis.id join kategori_buku on kategori_buku.id_buku = buku.id join kategori on kategori.id = kategori_buku.id_kategori where kategori.name like '%nama_kategori%';

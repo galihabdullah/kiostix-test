@@ -1,0 +1,19 @@
+{
+    "name": "galih/kiostix-test",
+    "authors": [
+        {
+            "name": "galih",
+            "email": "galihabdullah471@gmail.com"
+        }
+    ],
+    "require": {
+        "zircote/swagger-php": "^3.1",
+        "illuminate/database": "^8.14"
+    },
+    "type" : "project",
+    "autoload" : {
+        "psr-4" : {
+            "App\\" : "App/"
+        }
+    }
+}
