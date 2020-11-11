@@ -4,7 +4,9 @@
 Logic :
 1. Buatlah sebuah fungsi untuk menentukan nilai tertinggi & terendah dari baris array berikut,
 tanpa menggunakan fungsi bawaan seperti MAX / MIN.. [‘1,5,8,0,9,7,4,3,2’]
-```function getMax(array $number){
+
+```
+function getMax(array $number){
     $current = 0;
     foreach ($number as $num){
         if($num > $current){
@@ -34,6 +36,7 @@ a. Setiap kelipatan 25 akan mencetak string “KI”
 b. Setiap keliaptan 40 akan mencetak string “OS”
 c. Setiap kelipatan 60 akan mencetak string “TIK”
 d. Dan setiap kelipatan 99 akan mencetak string “KIOSTIX”
+
 ````
 function printString($number){
     $string = null;
