@@ -85,4 +85,28 @@ SELECT buku.* FROM buku join penulis on buku.id_penilis = penulis.id where penul
 6. Buatlah contoh query untuk menampilkan data buku dan nama penulis berdasarkan
 kategori
 ````
-SELECT buku.*, penulis.* FROM buku join penulis on buku.id_penilis = penulis.id join kategori_buku on kategori_buku.id_buku = buku.id join kategori on kategori.id = kategori_buku.id_kategori where kategori.name like '%nama_kategori%';````
+SELECT buku.*, penulis.* FROM buku join penulis on buku.id_penilis = penulis.id join kategori_buku on kategori_buku.id_buku = buku.id join kategori on kategori.id = kategori_buku.id_kategori where kategori.name like '%nama_kategori%';
+````
+
+
+### Web API :
+Catatan, buatlah dokumentasi API dengan keterangan struktur request dan response
+7. Buat contoh dokumentasi API untuk menampilkan daftar buku berdasarkan judul buku
+8. Buat contoh dokumentasi API untuk menampilkan daftar buku berdasarkan nama penulis
+9. Buat contoh dokumentasi API untuk menampilkan daftar buku dan nama penulis
+berdasarkan nama kategori
+Scripting, menggunakan PHP, node js atau framework lainnya yang berbasis web
+10. Buat contoh program yang dapat menampilkan data master buku, penulis dan kategori
+beserta modulnya membuat pembaruan hapus, bersama dengan contoh tindakan dari poin
+4 - 9 dapat dieksekusi
+
+Untuk tugas web api ada pada directory "API", untuk menjalankannya ikuti langkah dibawah ini :
+1. clone project https://github.com/galihabdullah/kiostix-test.git
+2. Akses directory hasil clone dan buka folder "API"
+3. Jalankan composer install
+4. Buat database
+5. Import sql "kiostix.sql"
+6. Update variable pada file .env
+7. Lalu jalankan "php -S localhost:8001"
+
+
