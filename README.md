@@ -75,8 +75,15 @@ palindrom('LEVEL');
 ### DATABASE
 Database :
 4. Buatlah contoh design struktur table untuk master BUKU, PENULIS dan KATEGORI
+
 ![Image of Yaktocat](https://github.com/galihabdullah/kiostix-test/blob/main/Database/database.png)
+
 5. Buatlah contoh query untuk menampilkan data semua buku berdasarkan nama penulis
+````
+SELECT buku.* FROM buku join penulis on buku.id_penilis = penulis.id where penulis.name like '%nama_penulis%';
+````
+
 6. Buatlah contoh query untuk menampilkan data buku dan nama penulis berdasarkan
 kategori
-
+````
+SELECT buku.*, penulis.* FROM buku join penulis on buku.id_penilis = penulis.id join kategori_buku on kategori_buku.id_buku = buku.id join kategori on kategori.id = kategori_buku.id_kategori where kategori.name like '%nama_kategori%';````
