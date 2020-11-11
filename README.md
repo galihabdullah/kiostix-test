@@ -101,7 +101,10 @@ beserta modulnya membuat pembaruan hapus, bersama dengan contoh tindakan dari po
 4 - 9 dapat dieksekusi
 
 Untuk tugas web api ada pada directory "API", untuk menjalankannya ikuti langkah dibawah ini :
-1. clone project https://github.com/galihabdullah/kiostix-test.git
+1. clone project 
+````
+git clone https://github.com/galihabdullah/kiostix-test.git
+````
 2. Akses directory hasil clone dan buka folder "API"
 3. Jalankan composer install
 4. Buat database
