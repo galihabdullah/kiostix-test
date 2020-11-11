@@ -13,6 +13,20 @@ tanpa menggunakan fungsi bawaan seperti MAX / MIN.. [‘1,5,8,0,9,7,4,3,2’]
     }
     echo $current . PHP_EOL;
 }
+getMax([10,20,30,40]);
+
+function getMin(array $number){
+    $current = null;
+    foreach ($number as $num){
+        if($current == null){
+            $current = $num;
+        }elseif($num < $current){
+            $current = $num;
+        }
+    }
+    echo $current . PHP_EOL;
+}
+getMin([10,20,30,40]);
 ```
 
 2. Dari nilai 0-100, Buat lah fungsi dengan ketentuan berikut:
@@ -20,7 +34,40 @@ a. Setiap kelipatan 25 akan mencetak string “KI”
 b. Setiap keliaptan 40 akan mencetak string “OS”
 c. Setiap kelipatan 60 akan mencetak string “TIK”
 d. Dan setiap kelipatan 99 akan mencetak string “KIOSTIX”
+````function printString($number){
+    $string = null;
+    for ($i = $number; $i >= 0; $i--){
+        if($i % 25 == 0){
+            $string = $string . " KI";
+        }elseif ($i % 40 == 0){
+            $string = $string . " OS";
+        }elseif ($i % 60 == 0){
+            $string = $string . " TIX";
+        }elseif ($i % 99 == 0){
+            $string = $string . " KIOSTIX";
+        }
+    }
+    echo $string . PHP_EOL;
+}
+printString(100);
+````
+
 3. Buatlah sebuah fungsi untuk mendeteksi sebuah kata Palindrom atau kata yang bila dibaca
 dari depan atau dari belakang, tetap sama, misal “LEVEL”,”KATAK”,”MALAM” dll.
 Diharapkan membuat fungsi sendiri tanpa menggunakan fungsi bawaan seperti String
 Reverse dsb.
+````
+function palindrom($string){
+    $stringSplit = str_split($string);
+    $palindrom = true;
+    for ($i = 0; $i <= count($stringSplit) - 1; $i++){
+        for ($j = count($stringSplit) - 1; $j >= 0; $j--){
+            if($stringSplit[$j] !== $stringSplit[$j]){
+                $palindrom = false;
+            }
+        }
+    }
+    echo $palindrom ? $string . " adalah Palindrom" . PHP_EOL: $string .  "bukan palindrom ". PHP_EOL;
+}
+palindrom('LEVEL');
+````
