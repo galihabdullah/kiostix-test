@@ -73,7 +73,6 @@ palindrom('LEVEL');
 ````
 
 ### DATABASE
-Database :
 4. Buatlah contoh design struktur table untuk master BUKU, PENULIS dan KATEGORI
 
 ![Image of Yaktocat](https://github.com/galihabdullah/kiostix-test/blob/main/Database/database.png)
